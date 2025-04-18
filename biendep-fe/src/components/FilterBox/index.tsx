@@ -11,6 +11,7 @@ import { SearchParams } from "constants/interface";
 import { FC, useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { ROUTE_URL } from "routes";
+import { provinceSerive } from "services/province";
 import { formatQueryParams } from "utils";
 
 const FilterBox: FC = () => {
@@ -41,18 +42,38 @@ const FilterBox: FC = () => {
     form.setFieldsValue(initData);
   }, []);
 
+  const getProvince = async () => {
+    try {
+      const res = await provinceSerive.get();
+      const data = res.data;
+      setProvinces([
+        {
+          label: "Tất cả",
+          value: "",
+        },
+        ...data,
+      ]);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     const provinceData = JSON.parse(
       localStorage.getItem(PROVINCE_STORAGE) || "[]"
     );
 
-    setProvinces([
-      {
-        label: "Tất cả",
-        value: "",
-      },
-      ...provinceData,
-    ]);
+    if (provinceData.length > 0) {
+      setProvinces([
+        {
+          label: "Tất cả",
+          value: "",
+        },
+        ...provinceData,
+      ]);
+    } else {
+      getProvince();
+    }
   }, []);
 
   return (
