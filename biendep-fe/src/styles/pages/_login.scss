@@ -1,0 +1,33 @@
+.admin-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  .login-card {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-header {
+    margin-bottom: 24px;
+  }
+
+  .login-form-forgot {
+    color: #1890ff;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .ant-input-affix-wrapper-lg {
+    padding: 8px 11px;
+  }
+
+  .site-form-item-icon {
+    color: rgba(0, 0, 0, 0.25);
+    margin-right: 8px;
+  }
+}

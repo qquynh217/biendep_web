@@ -1,0 +1,65 @@
+.filter-box {
+  width: 100%;
+  padding: 2.4rem;
+  margin-bottom: 3.2rem;
+  border-radius: 4px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: $color_white;
+  h2 {
+    color: #45564b;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  .search-input {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 2.4rem;
+    .ant-form-item {
+      margin: 0;
+      flex: 1;
+      border-bottom: 2px solid #003469;
+    }
+  }
+  .ant-radio-button-wrapper {
+    padding-inline: 0;
+  }
+  .ant-form-item.filter-item {
+    margin-bottom: 1.6rem;
+    .ant-form-item-label {
+      margin-right: 10px;
+      min-width: 9rem;
+      text-align: start;
+      label {
+        font-size: 1.8rem;
+        color: #45564b;
+        font-weight: 600;
+      }
+    }
+    .ant-radio-group {
+      gap: 14px;
+      .ant-radio-button-label {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .filter-box {
+    .ant-radio-group {
+      flex-wrap: wrap;
+      label {
+        flex: 0 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    .ant-form-item.filter-item {
+      margin-bottom: 10px;
+    }
+  }
+}

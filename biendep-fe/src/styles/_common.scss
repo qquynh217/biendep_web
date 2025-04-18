@@ -1,0 +1,41 @@
+:root {
+  --max-width: 1280px;
+  --page-padding: 0 24px;
+}
+
+html,
+body {
+  font-size: 14px;
+  font-family: $saira, sans-serif;
+  background-color: #f5f7fd;
+  #root {
+    height: 100%;
+
+    .App {
+      height: 100%;
+    }
+  }
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1040px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  html {
+    font-size: 62.5%;
+  }
+  :root {
+    --page-padding: 0 5px;
+  }
+}

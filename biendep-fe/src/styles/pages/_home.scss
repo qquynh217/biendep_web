@@ -1,0 +1,73 @@
+.home-page {
+  &-content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: var(--page-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    h2.title {
+      @include title();
+    }
+  }
+}
+.license-plates_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+  min-height: 20rem;
+  .license-plate_wrapper {
+    width: 20%;
+  }
+  &.vip {
+    background: $bg_color_vip;
+  }
+  &.hanoi {
+    background: $bg_color_hn;
+  }
+  &.hcm {
+    background: $bg_color_hcm;
+  }
+  &.other {
+    background: $bg_color_other;
+  }
+  &.sanh_vip {
+    background: $bg_color_sanh_vip;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .license-plates_container {
+    .license-plate_wrapper {
+      width: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .license-plates_container {
+    .license-plate_wrapper {
+      width: 33.333%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .license-plates_container {
+    .license-plate_wrapper {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .license-plates_container {
+    .license-plate_wrapper {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+// font
+$saira: "Saira";
+$chakra: "Chakra Petch";
+
+@font-face {
+  font-family: $saira;
+  src: url("resources/fonts/Saira/Saira-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $saira;
+  src: url("resources/fonts/Saira/Saira-Medium.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $saira;
+  src: url("resources/fonts/Saira/Saira-SemiBold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $saira;
+  src: url("resources/fonts/Saira/Saira-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Charka Petch
+@font-face {
+  font-family: $chakra;
+  src: url("resources/fonts/ChakraPetch/ChakraPetch-Bold.ttf")
+    format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}

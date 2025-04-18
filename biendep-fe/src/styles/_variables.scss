@@ -1,0 +1,49 @@
+// size screen responsive
+// Small devices (landscape phones, 576px and up)
+// Extra large devices (large desktops, 1200px and up)
+// Large devices (desktops, 992px and up)
+// Medium devices (tablets, 768px and up)
+$breakpoint_mobile_max: 575px;
+$breakpoint_tablet_max: 767px;
+$breakpoint_desktop_max: 991px;
+$breakpoint_large_desktop_max: 1199px;
+$breakpoint_ultra_desktop_max: 1600px;
+
+//color
+$color_white: #fff;
+$color_black: #000;
+$color_black_1: #0c0d10;
+$color_black_2: #0f151d;
+$color_black_3: #1a2230;
+$color_black_4: #0f131a;
+$color_gray: #e0e0e0;
+$color_gray_1: #f9f9f9;
+$color_gray_2: #adadad;
+$color_gray_3: #333333;
+$color_gray_4: #383d45;
+$color_gray_5: #454545;
+$color_gray_6: #878787;
+$color_gray_7: #d1d1d1;
+$color_gray_8: #787878;
+$color_green: #19e2d7;
+$color_green_1: #50ff81;
+$color_blue: #21324d;
+$color_blue_1: #324563;
+$color_blue_2: #008ac3;
+$color_blue_3: #21a0af;
+$color_blue_4: #c6c8cd;
+$color_blue_5: #2ef0d7;
+$color_blue_6: #1b263a;
+
+// $bg_color_vip: linear-gradient(#e11313 0%, #4a0001);
+$bg_color_vip: linear-gradient(to bottom, #ed213a, #93291e);
+
+$bg_color_hn: linear-gradient(to bottom, #fed572, #fefd7e, #ffe15c, #ffde59);
+$bg_color_hcm: linear-gradient(to top, #ff512f, #f09819);
+$bg_color_other: linear-gradient(90deg, #061532 0%, #0e3884 100%);
+$bg_color_sanh_vip: linear-gradient(90deg, #3d2205 0%, #ffd02d 100%);
+
+$primary-color: #e74c3c;
+$secondary-color: #22292f;
+$text-color: #333;
+$light-gray: #f5f5f5;

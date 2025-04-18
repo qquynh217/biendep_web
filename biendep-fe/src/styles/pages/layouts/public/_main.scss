@@ -1,0 +1,32 @@
+@import "./header";
+@import "./footer";
+
+.ant-float-btn {
+  width: 5rem;
+  height: 5rem;
+  &.fb_link {
+    .ant-float-btn-body {
+      background-color: #0866ff;
+    }
+    .ant-float-btn-body {
+      * {
+        font-size: 2.4rem;
+        color: $color_white;
+      }
+    }
+  }
+  &.zalo_link {
+    .ant-float-btn-body {
+      background-color: #ffd400;
+    }
+    .ant-float-btn-icon {
+      width: auto;
+    }
+    .ant-float-btn-body {
+      * {
+        font-size: 3.2rem;
+        color: $color_white;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.admin-layout {
+  min-height: 100vh;
+  .logo-vertical {
+    background-color: #001529;
+    font-size: 1.6rem;
+    height: 64px;
+    padding: 16px;
+    .logo-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .collapsed-btn {
+    color: $color_white;
+    font-size: 2.8rem;
+    &:hover {
+      color: $light-gray;
+    }
+  }
+  &-content {
+    margin: var(--page-padding);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 2.4rem;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .ant-layout-header {
+    display: flex;
+    h2 {
+      color: $primary-color !important;
+    }
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    padding: var(--page-padding);
+  }
+  .ant-menu {
+    margin-top: 1.2rem;
+    .ant-menu-item-selected {
+      color: $color_white;
+    }
+    // .ant-menu-item {
+    //   margin: 4px 10px;
+    //   width: calc(100% - 20px);
+    // }
+  }
+  .logout-btn {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    padding: 0 16px 0 24px;
+    cursor: pointer;
+    color: $color_white;
+    transition: all 0.3s ease;
+    gap: 5px;
+    &:hover {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+}
