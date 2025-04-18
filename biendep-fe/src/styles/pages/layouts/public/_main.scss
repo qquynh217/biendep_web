@@ -4,9 +4,13 @@
 .ant-float-btn {
   width: 5rem;
   height: 5rem;
+
   &.fb_link {
     .ant-float-btn-body {
       background-color: #0866ff;
+    }
+    .ant-float-btn-icon {
+      width: auto !important;
     }
     .ant-float-btn-body {
       * {
@@ -20,7 +24,7 @@
       background-color: #ffd400;
     }
     .ant-float-btn-icon {
-      width: auto;
+      width: auto !important;
     }
     .ant-float-btn-body {
       * {
