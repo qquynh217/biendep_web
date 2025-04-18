@@ -132,4 +132,5 @@ lib-cov
 *.out
 *.pid
 
-.env
+./biendep-fe/.env
+./biendep-be/.env
