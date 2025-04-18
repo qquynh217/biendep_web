@@ -2,7 +2,7 @@ import { Button, Card, Form, Input, Modal, Typography } from "antd";
 import { useUser } from "context/UserContext";
 import { useState } from "react";
 import { FaLock, FaUser } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ROUTE_URL } from "routes";
 import { userSerive } from "services/user";
 
@@ -40,7 +40,7 @@ const AdminLogin = () => {
       <Card className="login-card">
         <div className="login-header">
           <Title level={3} style={{ textAlign: "center", marginBottom: 10 }}>
-            Biển đẹp Vinh Oanh
+            <Link to={ROUTE_URL.HOME}>Biển đẹp Vinh Oanh</Link>
           </Title>
           <Text
             type="secondary"

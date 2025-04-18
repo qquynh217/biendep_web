@@ -7,6 +7,7 @@ import {
   SORT_OPTION,
   TYPE_OPTION,
 } from "constants";
+import { SearchParams } from "constants/interface";
 import { FC, useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { ROUTE_URL } from "routes";
@@ -22,6 +23,11 @@ const FilterBox: FC = () => {
       const queryParams = formatQueryParams(field);
       navigate(ROUTE_URL.SEARCH + `?${queryParams}`);
     }
+  };
+
+  const handleFinish = (value: SearchParams) => {
+    const queryParams = formatQueryParams(value);
+    navigate(ROUTE_URL.SEARCH + `?${queryParams}`);
   };
   const [provinces, setProvinces] = useState<
     Array<{ value: string; label: string }>
@@ -52,7 +58,7 @@ const FilterBox: FC = () => {
   return (
     <div className="filter-box">
       <h2>Tìm nhanh biển số đẹp</h2>
-      <Form onValuesChange={handleSubmit} form={form}>
+      <Form onValuesChange={handleSubmit} form={form} onFinish={handleFinish}>
         <div className="search-input">
           <Form.Item name="key">
             <Input
@@ -61,7 +67,7 @@ const FilterBox: FC = () => {
               size="large"
             />
           </Form.Item>
-          <Button type="primary" size="large">
+          <Button type="primary" size="large" htmlType="submit">
             Tìm kiếm
           </Button>
         </div>

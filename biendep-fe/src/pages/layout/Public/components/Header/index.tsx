@@ -1,15 +1,28 @@
 import { Input } from "antd";
 import { FC } from "react";
+import { useNavigate } from "react-router-dom";
 import location from "resources/icon/location-pin.png";
 import phone from "resources/icon/phone-call.png";
+import { ROUTE_URL } from "routes";
 
 const { Search } = Input;
 
 const Header: FC = () => {
+  const navigate = useNavigate();
+  const handleSubmit = (value: any) => {
+    console.log(value);
+    navigate(ROUTE_URL.SEARCH + `?key=${value}`);
+  };
   return (
     <div className="public-header">
       <div className="public-header_top">
-        <h2>Biển đẹp Vinh Oanh</h2>
+        <h2
+          onClick={() => {
+            navigate(ROUTE_URL.HOME);
+          }}
+        >
+          Biển đẹp Vinh Oanh
+        </h2>
       </div>
       <div className="public-header_content">
         <div className="content-inner">
@@ -18,7 +31,12 @@ const Header: FC = () => {
             <p>Địa chỉ: 918b Đường Láng</p>
           </div>
           <div className="search">
-            <Search allowClear placeholder="Nhập biển số cần tìm" />
+            <Search
+              allowClear
+              placeholder="Nhập biển số cần tìm"
+              onSearch={handleSubmit}
+              maxLength={11}
+            />
           </div>
           <div className="hotline">
             <img src={phone} alt="" />
