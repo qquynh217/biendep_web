@@ -1,3 +1,4 @@
-license_plate.json
+license_plates.json
 province.json
 */.env
+*/ecosystem.config.js

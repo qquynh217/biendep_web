@@ -131,6 +131,5 @@ lib-cov
 *.log
 *.out
 *.pid
-
-./biendep-fe/.env
-./biendep-be/.env
+.env
+ecosystem.config.js
