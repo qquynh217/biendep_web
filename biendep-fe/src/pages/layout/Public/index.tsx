@@ -12,7 +12,7 @@ const PublicLayout: FC = () => {
       <Header />
       <Outlet />
       <Footer />
-      <FloatButton.Group shape="circle" style={{ insetInlineEnd: 24 }}>
+      <FloatButton.Group shape="circle" style={{ insetInlineEnd: 16, bottom: 70 }}>
         <FloatButton
           icon={<FaFacebookF />}
           href={import.meta.env.VITE_FB}
