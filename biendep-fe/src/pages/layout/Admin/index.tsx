@@ -62,7 +62,7 @@ const AdminLayout: FC = () => {
                 className="collapsed-btn"
               />
               <Link to={ROUTE_URL.HOME}>
-                <h2>Biển đẹp Vinh Oanh</h2>
+                <h2>Đấu giá biển số</h2>
               </Link>
             </div>
 

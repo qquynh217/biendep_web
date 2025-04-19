@@ -21,7 +21,7 @@ const Header: FC = () => {
             navigate(ROUTE_URL.HOME);
           }}
         >
-          Biển đẹp Vinh Oanh
+          Đấu giá biển số
         </h2>
       </div>
       <div className="public-header_content">
@@ -40,7 +40,7 @@ const Header: FC = () => {
           </div>
           <div className="hotline">
             <img src={phone} alt="" />
-            <p>Hotline: 0943365555</p>
+            <p>Hotline: 0833666888</p>
           </div>
         </div>
       </div>
