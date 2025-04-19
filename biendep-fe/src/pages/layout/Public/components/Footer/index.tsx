@@ -56,7 +56,7 @@ const Footer: FC = () => {
           <ul className="footer__info">
             <li>
               <FaMapMarkerAlt className="contact-icon" />
-              <span>98b Đường Láng, Đống Đa, Hà Nội</span>
+              <span>918 Đường Láng, Đống Đa, Hà Nội</span>
             </li>
             <li>
               <FaPhone className="contact-icon" />

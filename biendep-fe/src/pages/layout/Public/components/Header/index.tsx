@@ -28,7 +28,7 @@ const Header: FC = () => {
         <div className="content-inner">
           <div className="address">
             <img src={location} alt="" />
-            <p>Địa chỉ: 918b Đường Láng</p>
+            <p>Địa chỉ: 918 Đường Láng</p>
           </div>
           <div className="search">
             <Search
