@@ -280,24 +280,24 @@ module.exports = {
       const vips = await LicensePlate.find({
         where: { isVip: true, isHide: false },
         limit: 20,
-        sort: [{ createdAt: "desc" }],
+        sort: [{ price: "desc" }],
       });
 
       //   Biến số đẹp Hà Nội
       const hanoi = await LicensePlate.find({
-        where: { provinceCode: listProvinceCodeHN, isHide: false },
+        where: { provinceCode: listProvinceCodeHN, isHide: false, isVip: true },
         limit: 20,
-        sort: [{ isVip: "desc" }, { typePoint: "desc" }],
+        sort: [{ price: "desc" }],
       });
 
       //   Biến số đẹp Tp.Hồ Chí Minh
       const hcm = await LicensePlate.find({
         where: {
           provinceCode: listProvinceCodeHCM,
-          isHide: false,
+          isHide: false,isVip: true
         },
         limit: 20,
-        sort: [{ isVip: "desc" }, { typePoint: "desc" }],
+        sort: [{ price: "desc" }],
       });
 
       //   Biến số đẹp các tỉnh
@@ -307,9 +307,10 @@ module.exports = {
             "!=": [...listProvinceCodeHCM, ...listProvinceCodeHN],
           },
           isHide: false,
+          isVip: true,
         },
         limit: 20,
-        sort: [{ isVip: "desc" }, { typePoint: "desc" }],
+        sort: [{ price: "desc" }],
       });
 
       //   Biến sảnh vip
@@ -320,6 +321,7 @@ module.exports = {
           isHide: false,
         },
         limit: 20,
+        sort: [{ price: "desc" }],
       });
 
       const data = {
