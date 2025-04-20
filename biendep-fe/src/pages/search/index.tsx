@@ -79,7 +79,7 @@ const SearchPage: FC = () => {
           ))
         ) : (
           <div className="empty-data">
-            <Empty />
+            <Empty description="Không có dữ liệu"/>
           </div>
         )}
       </div>
