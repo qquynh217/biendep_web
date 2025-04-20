@@ -19,7 +19,7 @@ class LicensePlateService {
     return axiosInstance.get(this.baseUrl + "/home");
   }
 
-  create(params: { plateCode: number; isVip: boolean; price: number }) {
+  create(params: { plateCode: string; isVip: boolean; price: number, isHide?:boolean }) {
     return axiosInstance.post(this.baseUrl, params);
   }
 
