@@ -1,8 +1,8 @@
 import { Carousel } from "antd";
 import CustomArrow from "components/CustomArrow";
 import { FC } from "react";
+import { banners } from "resources/images";
 import banner from "resources/images/banner.webp";
-import banner1 from "resources/images/banner1.jpg";
 
 const HomeBanner: FC = () => {
   return (
@@ -29,9 +29,11 @@ const HomeBanner: FC = () => {
             </div>
           </div>
         </div>
-        <div className="banner-item">
-          <img src={banner1} alt="" />
-        </div>
+        {banners.map((item, index) => (
+          <div className={`banner-item ${item.radio}`} key={index}>
+            <img src={item.img} alt="" />
+          </div>
+        ))}
       </Carousel>
     </div>
   );

@@ -7,6 +7,14 @@
       height: 100%;
       object-fit: cover;
     }
+
+    &.portrait {
+      background-color: #000000;
+      img {
+        width: auto;
+        margin: auto;
+      }
+    }
   }
   .banner-default {
     position: relative;
