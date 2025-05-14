@@ -30,6 +30,7 @@ module.exports.routes = {
   "GET /license-plate/home": "LicensePlateController.getListHome",
   "DELETE /license-plate/:id": "LicensePlateController.delete",
   "GET /license-plate/all": "LicensePlateController.getAll",
+  "DELETE /license-plate/all": "LicensePlateController.deleteAll",
 
   // User
   "POST /user/login": "UserController.login",

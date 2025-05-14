@@ -22,5 +22,6 @@ module.exports.policies = {
     edit: "isAuthenticated",
     delete: "isAuthenticated",
     getAll: "isAuthenticated",
+    deleteAll: "isAuthenticated",
   },
 };

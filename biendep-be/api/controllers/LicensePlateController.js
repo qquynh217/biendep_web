@@ -294,7 +294,8 @@ module.exports = {
       const hcm = await LicensePlate.find({
         where: {
           provinceCode: listProvinceCodeHCM,
-          isHide: false,isVip: true
+          isHide: false,
+          isVip: true,
         },
         limit: 20,
         sort: [{ price: "desc" }],
@@ -479,6 +480,21 @@ module.exports = {
       return res.status(HTTP_RESPONSE.STATUS.SERVER_ERROR).send({
         msg: HTTP_RESPONSE.MESSAGE.SERVER_ERROR,
         data: [],
+      });
+    }
+  },
+
+  deleteAll: async (req, res) => {
+    try {
+      const deletedItems = await LicensePlate.destroy({});
+      logger.info(`Deleted ${deletedItems.length} license plates`);
+      return res.status(HTTP_RESPONSE.STATUS.SUCCESS).send({
+        msg: "Xóa tất cả biển số thành công.",
+      });
+    } catch (error) {
+      logger.error("Delete all lisence plate error: " + error.toString());
+      return res.status(HTTP_RESPONSE.STATUS.SERVER_ERROR).send({
+        msg: HTTP_RESPONSE.MESSAGE.SERVER_ERROR,
       });
     }
   },
