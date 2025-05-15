@@ -487,7 +487,7 @@ module.exports = {
   deleteAll: async (req, res) => {
     try {
       const deletedItems = await LicensePlate.destroy({});
-      logger.info(`Deleted ${deletedItems.length} license plates`);
+      logger.info(`Deleted license plates`);
       return res.status(HTTP_RESPONSE.STATUS.SUCCESS).send({
         msg: "Xóa tất cả biển số thành công.",
       });
