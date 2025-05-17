@@ -110,7 +110,12 @@ module.exports = {
       };
       // Thêm điều kiện tìm kiếm theo plateCode
       if (key) {
-        query.plateCode = { contains: key.toUpperCase() };
+        query.plateCode = {
+          contains: key
+            .trim()
+            .replace(/[^a-zA-Z0-9]/g, "")
+            .toUpperCase(),
+        };
       }
 
       // Thêm điều kiện ký tự trong plateCode
