@@ -10,7 +10,7 @@ const Footer: FC = () => {
         {/* Logo và thông tin công ty */}
         <div className="footer__brand">
           <Link to={ROUTE_URL.HOME} style={{ textDecoration: "none" }}>
-            <h2 className="footer__logo">Đấu giá biển số</h2>
+            <h2 className="footer__logo">Biển số đấu giá</h2>
           </Link>
           <p className="footer__slogan">
             Uy tín - Chất lượng - Giá tốt nhất thị trường
@@ -72,7 +72,7 @@ const Footer: FC = () => {
 
       {/* Bản quyền */}
       <div className="footer__copyright">
-        <p>© 2025 Đấu giá biển số. All Rights Reserved.</p>
+        <p>© 2025 Biển số đấu giá. All Rights Reserved.</p>
       </div>
     </div>
   );

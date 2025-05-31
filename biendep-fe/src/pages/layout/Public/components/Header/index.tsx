@@ -21,7 +21,7 @@ const Header: FC = () => {
             navigate(ROUTE_URL.HOME);
           }}
         >
-          Đấu giá biển số
+          Biển số đấu giá
         </h2>
       </div>
       <div className="public-header_content">

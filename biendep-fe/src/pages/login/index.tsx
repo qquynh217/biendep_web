@@ -40,7 +40,7 @@ const AdminLogin = () => {
       <Card className="login-card">
         <div className="login-header">
           <Title level={3} style={{ textAlign: "center", marginBottom: 10 }}>
-            <Link to={ROUTE_URL.HOME}>Đấu giá biển số</Link>
+            <Link to={ROUTE_URL.HOME}>Biển số đấu giá</Link>
           </Title>
           <Text
             type="secondary"
